@@ -27,7 +27,7 @@ public class BaseModuleActivity extends AppCompatActivity {
     protected Handler mBackgroundHandler;
     protected Handler mUIHandler;
     protected String modelType;
-    private static final int REQUEST_CODE_CAMERA_PERMISSION = 200;
+
 
 
 

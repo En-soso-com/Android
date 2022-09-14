@@ -97,7 +97,7 @@ public abstract class AbstractCameraXActivity<R> extends BaseModuleActivity {
                 .build();
         final ImageAnalysis imageAnalysis = new ImageAnalysis(imageAnalysisConfig);
         imageAnalysis.setAnalyzer((image, rotationDegrees) -> {
-            if (SystemClock.elapsedRealtime() - mLastAnalysisResultTime < 300) {  //이전에 이미지 분석한 시간에서부터 500ms가 지나고 받은 새로운 이미지를 분석
+            if (SystemClock.elapsedRealtime() - mLastAnalysisResultTime < 2000) {  //이전에 이미지 분석한 시간에서부터 500ms가 지나고 받은 새로운 이미지를 분석
                 return;
             }
 
